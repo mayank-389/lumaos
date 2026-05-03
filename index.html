@@ -1751,7 +1751,7 @@
                 } else {
 
                     document.documentElement.style.setProperty('--wallpaper-gradient', presets[theme] || presets.default);
-                    document.body.style.backgroundImage = 'none';
+                    document.body.style.backgroundImage = "url('prorsche.jpeg')";
                 }
             },
 
@@ -2355,7 +2355,7 @@
                 };
                 localStorage.setItem('webos_wallpaper', theme);
                 localStorage.removeItem('webos_custom_wallpaper');
-                document.body.style.backgroundImage = 'none';
+                document.body.style.backgroundImage = "url('prorsche.jpeg')";
                 document.documentElement.style.setProperty('--wallpaper-gradient', presets[theme] || presets.default);
                 this.updateWallpaperDisplay(theme);
                 this.notify(`${this.getWallpaperLabel(theme)} wallpaper applied`);
@@ -2394,7 +2394,7 @@
             applyDarkMode(isDark) {
                 if (isDark) {
                     document.documentElement.style.setProperty('--wallpaper-gradient', 'linear-gradient(135deg, #1a1a2e 0%, #0f0f1e 100%)');
-                    document.body.style.backgroundImage = 'none';
+                    document.body.style.backgroundImage = "url('prorsche.jpeg')";
                 } else {
                     this.loadWallpaper();
                 }
@@ -2470,7 +2470,7 @@
                     localStorage.setItem('webos_custom_wallpaper', dataUrl);
 
 
-                    document.body.style.backgroundImage = `url("${dataUrl}")`;
+                    document.body.style.backgroundImage = "url('prorsche.jpeg')";
                     document.body.style.backgroundSize = 'cover';
                     document.body.style.backgroundPosition = 'center';
                     document.body.style.backgroundAttachment = 'fixed';
